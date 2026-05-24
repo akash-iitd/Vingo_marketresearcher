@@ -1,2 +1,4 @@
 libcurl4
 libcurl4-openssl-dev
+libxml2-dev
+libxslt-dev

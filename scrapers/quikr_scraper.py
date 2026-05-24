@@ -118,7 +118,7 @@ async def _scrape_category(
     try:
         resp = await client.get(url, headers=HEADERS, timeout=20, follow_redirects=True)
         if resp.status_code == 200 and "404error" not in resp.url.path.lower():
-            soup = BeautifulSoup(resp.text, "lxml")
+            soup = BeautifulSoup(resp.text, "html.parser")
             result["url"] = str(resp.url)
 
             # ── Extract distinct listing cards ──────────────────────────────────

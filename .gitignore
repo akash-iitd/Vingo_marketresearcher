@@ -1,0 +1,23 @@
+# Python bytecode and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+bin/
+lib/
+include/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Vingo scraper outputs & incremental checkpoints
+output/
